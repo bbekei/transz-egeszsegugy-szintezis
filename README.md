@@ -2,7 +2,7 @@
 
 Magyar nyelvű, akadémiai színvonalú, forráskritikai szintézis a **felnőtt (18+) transznemű egészségügyi ellátás** bizonyíték-bázisáról. A tanulmány 63 tudományos forrást dolgoz fel (ebből 62 aktív, 1 kizárt az audit során), három lektorálási körrel (Gemini, Grok, Copilot), és dokumentált verziótörténettel (v1 → v6).
 
-**🌐 Olvasd online:** [tanulmany.html](https://FELHASZNALONEV.github.io/REPO-NEV/tanulmany.html) *(interaktív formátum, kereshető forrás-adatbázissal)*
+**🌐 Olvasd online:** [tanulmany.html](https://bbekei.github.io/transz-egeszsegugy-szintezis/tanulmany.html) *(interaktív formátum, kereshető forrás-adatbázissal)*
 
 **📋 Aktuális verzió:** v6 (2026. április 24.)
 
