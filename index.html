@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felnőtt transznemű egészségügyi ellátás — bizonyíték-alapú szintézis</title>
+<meta name="description" content="Magyar nyelvű, akadémiai színvonalú forráskritikai szintézis a felnőtt transznemű egészségügyi ellátás bizonyíték-bázisáról. 63 forrás, háromszakaszos audit, három külső AI-lektor.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Felnőtt transznemű egészségügyi ellátás — bizonyíték-alapú szintézis">
+<meta property="og:description" content="Magyar nyelvű forráskritikai szintézis 63 tudományos forrás alapján. Háromszakaszos audit, három külső AI-lektor, nyílt verziótörténet.">
+<meta property="og:locale" content="hu_HU">
+
+<style>
+:root {
+  --bg: #fafaf7;
+  --text: #1a1a1a;
+  --muted: #555;
+  --border: #d4d4d0;
+  --accent: #5a4a3a;
+  --accent-light: #e8e3dc;
+  --card: #ffffff;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,0.12);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  font-size: 17px;
+}
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+header {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin: 0 0 0.8rem;
+  color: var(--accent);
+  font-weight: normal;
+}
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--muted);
+  font-style: italic;
+  margin: 0;
+}
+.meta {
+  margin-top: 1.2rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.meta span {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+.meta strong { color: var(--text); font-weight: normal; font-style: italic; }
+
+h2 {
+  font-size: 1.4rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--accent);
+  font-weight: normal;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+p { margin: 0.8rem 0; }
+
+.cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+.cta {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.4rem 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.cta:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+  border-color: var(--accent);
+}
+.cta-primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+.cta-primary:hover { background: #3d3225; }
+.cta-primary .cta-desc { color: rgba(255,255,255,0.85); }
+
+.cta-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+.cta-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  background: var(--card);
+}
+.stat {
+  padding: 1rem;
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+.stat:last-child { border-right: none; }
+.stat-num {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 0.2rem;
+}
+.stat-label {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+ul { padding-left: 1.4rem; }
+li { margin: 0.3rem 0; }
+
+.callout {
+  background: var(--accent-light);
+  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  margin: 1.5rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.callout-warning {
+  background: #fff4d6;
+  border-left-color: #b8860b;
+}
+
+code {
+  font-family: 'Courier New', Consolas, monospace;
+  background: var(--accent-light);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+footer {
+  margin-top: 3.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+footer p { margin: 0.5rem 0; }
+footer a { color: var(--accent); }
+
+@media (max-width: 600px) {
+  .container { padding: 2rem 1rem 3rem; }
+  h1 { font-size: 1.5rem; }
+  .stat-num { font-size: 1.3rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+  <h1>Felnőtt transznemű egészségügyi ellátás</h1>
+  <p class="subtitle">Bizonyíték-alapú szintézis és forráskritikai audit</p>
+  <div class="meta">
+    <span><strong>Verzió:</strong> v6</span>
+    <span><strong>Dátum:</strong> 2026. április 21.</span>
+    <span><strong>Nyelv:</strong> magyar</span>
+    <span><strong>Licenc:</strong> CC BY 4.0</span>
+  </div>
+</header>
+
+<p>
+  Ez a projekt egy <strong>akadémiai színvonalú, magyar nyelvű forráskritikai szintézist</strong> tartalmaz a
+  felnőtt (18+) transznemű egészségügyi ellátás bizonyíték-bázisáról. A tanulmány 63 tudományos forrást
+  dolgoz fel rétegzett értékeléssel, háromszakaszos audit-protokollal, és három külső AI-lektori kör
+  dokumentációjával.
+</p>
+
+<div class="stats">
+  <div class="stat"><span class="stat-num">63</span><span class="stat-label">feldolgozott forrás</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">audit-szakasz</span></div>
+  <div class="stat"><span class="stat-num">3</span><span class="stat-label">külső AI-lektor</span></div>
+  <div class="stat"><span class="stat-num">8</span><span class="stat-label">fő fejezet</span></div>
+</div>
+
+<h2>Kezdj hozzá</h2>
+
+<div class="cta-grid">
+  <a href="tanulmany.html" class="cta cta-primary">
+    <span class="cta-title">📖 Olvasd online →</span>
+    <span class="cta-desc">A teljes tanulmány interaktív HTML-formátumban, beépített szűrhető forrás-adatbázissal</span>
+  </a>
+  <a href="tanulmany.md" class="cta" download>
+    <span class="cta-title">📄 Markdown letöltése</span>
+    <span class="cta-desc">A teljes szöveg Markdown formátumban — idézhető, szerkeszthető, verziózható</span>
+  </a>
+  <a href="forrasok.csv" class="cta" download>
+    <span class="cta-title">📊 Forrás-adatbázis (CSV)</span>
+    <span class="cta-desc">63 forrás strukturált adatokkal (szerző, év, DOI, bizonyíték-réteg, audit-státusz)</span>
+  </a>
+</div>
+
+<h2>Mit tartalmaz a tanulmány</h2>
+
+<ul>
+  <li><strong>1. Executive summary</strong> + 10 gyakori kérdés közérthető válasszal</li>
+  <li><strong>2. Fogalomtár</strong> — ~65 szakkifejezés 10 tematikus csoportban</li>
+  <li><strong>3. Módszertan</strong> — forrásgyűjtés (1212 → 63), rétegzett értékelés, háromszakaszos audit</li>
+  <li><strong>4. A revideált szintézis</strong> — diagnosztika, hormonkezelés, sebészet, pszichés kimenetel, detranzíció, nemzeti felülvizsgálatok (Cass, SBU, COHERE), abszolút kockázat-kommunikáció, LTFU% áttekintés</li>
+  <li><strong>5. Audit-eredmények</strong> — teljeskörű, 63-forrásos háromszakaszos ellenőrzés</li>
+  <li><strong>6–7. Limitációk és záró értékelés</strong></li>
+  <li><strong>8. Külső AI-lektori vélemények</strong> — Gemini, Grok és Copilot lektorálás részletes dokumentációja, beleértve egy hallucinációs epizódot és módszertani tanulságait</li>
+</ul>
+
+<h2>Módszertani kulcspontok</h2>
+
+<ul>
+  <li><strong>AI-asszisztált narratív szintézis</strong> — nem előre regisztrált szisztematikus review; a módszertan részletesen dokumentált (§3)</li>
+  <li><strong>Háromszakaszos forrás-audit</strong> — minden forrást bibliográfiai és tartalmi szinten ellenőriztünk; a „nem ellenőrizhető" kategória felszámolva</li>
+  <li><strong>Három külső AI-lektor</strong> — az eltérő teljesítmények (konfabuláció, plauzibilitási rábólintás, kalibrált bizonytalanság) önmagukban is módszertani tanulságot adnak</li>
+  <li><strong>Abszolút és relatív kockázat-kommunikáció</strong> — a SIR/SMR/HR mutatók abszolút többletkockázatra (/1000 personyear) is átszámítva</li>
+  <li><strong>Kiegyensúlyozott forrás-mix</strong> — WPATH SOC-8 + nemzeti felülvizsgálatok (Cass, SBU, COHERE) + BMJ kritikai újraelemzések</li>
+  <li><strong>Nyílt verziótörténet</strong> — v1-től v6-ig minden változás dokumentált</li>
+</ul>
+
+<h2>Fontos figyelmeztetések</h2>
+
+<div class="callout callout-warning">
+  <p style="margin:0.3rem 0;"><strong>Ez nem klinikai tanács.</strong> A tanulmány tudományos szintézis és forráskritikai elemzés. Klinikai döntésekhez mindig konzultálj szakorvossal.</p>
+  <p style="margin:0.3rem 0;"><strong>A téma erősen polarizált.</strong> A tanulmány kiegyensúlyozott forrás-mixet választott, és a vitákat mind tudományos, mind orvoslás-filozófiai szempontból bemutatja.</p>
+  <p style="margin:0.3rem 0;"><strong>AI-asszisztált munka.</strong> A tanulmányt Claude (Anthropic) AI-asszisztens állította össze a szerző iránymutatása szerint. Az AI-lektori körök hibáit (pl. Gemini hallucinációs epizód) nyíltan dokumentáljuk (§8).</p>
+</div>
+
+<h2>Hivatkozási javaslat</h2>
+
+<div class="callout">
+  <p style="margin:0;"><code>Békei Balázs. (2026). Felnőtt transznemű egészségügyi ellátás: bizonyíték-alapú szintézis és forráskritikai audit. v6. GitHub.</code></p>
+</div>
+
+<h2>Forráskód és hibajelzés</h2>
+
+<p>
+  A projekt teljes tartalma (HTML, Markdown, CSV, verziótörténet) nyíltan elérhető a GitHub repóban.
+  Hibajelzéseket, javítási javaslatokat és újabb releváns forrásokat a GitHub Issues-on keresztül fogadok.
+</p>
+
+<footer>
+  <p>© 2026 Békei Balázs — <a href="LICENSE">Creative Commons Attribution 4.0 International (CC BY 4.0)</a></p>
+  <p>A tanulmány készítését Claude (Anthropic) AI-asszisztens segítette. A végső szakmai validálás a szerző felelőssége.</p>
+  <p>Kapcsolat és hibajelzés: a repository Issues felületén.</p>
+</footer>
+
+</div>
+
+</body>
+</html>
