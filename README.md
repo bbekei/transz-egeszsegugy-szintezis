@@ -97,7 +97,7 @@ Ha tudományos vagy publicisztikai munkában idézed:
 ```
 Békei Balázs. (2026). Felnőtt transznemű egészségügyi ellátás: 
 bizonyíték-alapú szintézis és forráskritikai audit. v6. 
-GitHub: https://github.com/FELHASZNALONEV/REPO-NEV
+GitHub: https://github.com/bbekei/transz-egeszsegugy-szintezis/
 ```
 
 Ha Zenodo DOI-t is regisztrálsz a projekthez, az idézési forma kiegészül a DOI-val.
